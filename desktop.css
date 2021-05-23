@@ -1,0 +1,137 @@
+/* for desktop device */
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+
+
+/* Navbar style starts here */
+.navbar {
+  padding: 5px 10px;
+}
+
+.nav-menu {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-menu a {
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+.nav-menu a:hover {
+  background-color: #4f3772;
+}
+
+
+/* Navbar style ends here */
+
+/* profile style starts here */
+.profile-desc h1 {
+  font-size: 3rem;
+
+}
+
+.profile-desc p {
+  color: gray;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* profile style ends here */
+
+/* about me starts here */
+.about-me-img img{
+margin-top: 100px;
+}
+
+.about-me-desc p{
+text-align: left;
+}
+
+/* about me ends here */
+
+/* Experience style starts here */
+.experience{
+padding: 1% 5%;
+}
+
+.experience .card{
+  width: 400px;
+}
+
+/* Experience style endss here */
+
+
+
+.contact{
+  padding-right: 50px;
+}
+
+
+.contact-form button {
+  width: 150px;
+}
+
+
+.more-contact{
+  text-align: center; 
+  position: relative;     
+} 
+
+.media-button{
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

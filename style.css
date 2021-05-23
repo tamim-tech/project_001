@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+    font-size: 1.2 rem;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Navbar style starts here */
+.navbar {
+    background-color: #000000;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a {
+    margin: 7px 0px;
+    padding: 10px;
+    background-color: #4f3772;
+    border-radius: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+.navbar::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* Navbar style ends here */
+
+
+/* profile style starts here */
+.profile {
+    padding: 130px 10px;
+}
+
+.profile-desc {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.profile-desc h1 {
+    /* font-family: 'Satisfy', cursive; */
+    font-size: 3rem;
+}
+
+
+
+.profile-desc p {
+    color: #808080;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+
+.profile::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile style ends here */
+
+
+/* About me style starts here */
+.about-me {
+    background-color: #202020;
+    padding: 1% 7%;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-me-img img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+
+.about-me p {
+    text-align: center;
+}
+
+.about-me a {
+    font-size: 1.2rem;
+}
+
+
+.cv-button {
+    background-color: #707070;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.about-me::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* About me style starts here */
+
+
+
+/* Experience style starts here */
+.experience {
+    padding: 1% 0%;
+    overflow: auto;
+}
+
+.experience .card {
+    background-color: #c5c6c7;
+    border-radius: 5px;
+    /* height: 700px; */
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 5px #0b0c10;
+}
+
+.card-icon {
+    text-align: center;
+}
+
+.card-icon img {
+
+    width: 100px;
+    margin-top: 20px;
+
+}
+
+.rounded-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.card-title h2 {
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.skill-container {
+    padding-right: 45px;
+
+}
+
+.skill-container li {
+    list-style: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 10px;
+}
+
+.skill-container li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #37478580;
+    border-radius: 1000px;
+}
+
+.skill-container li::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: #374785;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+}
+
+.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+
+.sass::after {
+    animation-name: sass;
+}
+
+@keyframes sass {
+    to {
+        width: 0%;
+    }
+}
+
+.js::after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 30%;
+    }
+}
+
+.react::after {
+    animation-name: react;
+}
+
+@keyframes react {
+    to {
+        width: 0%;
+    }
+}
+
+.bootstrap::after {
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+    to {
+        width: 5%;
+    }
+}
+
+.node::after {
+    animation-name: node;
+}
+
+@keyframes node {
+    to {
+        width: 0%;
+    }
+}
+
+.expressjs::after {
+    animation-name: express;
+}
+
+@keyframes express {
+    to {
+        width: 0%;
+    }
+}
+
+.github::after {
+    animation-name: git;
+}
+
+@keyframes git {
+    to {
+        width: 55%;
+    }
+}
+
+/* Experience style endss here */
+
+
+/* contacts style starts here */
+.contact {
+    text-align: center;
+    padding: 1% 7%;
+    background-color: #374785;
+    color: white;
+    overflow: auto;
+}
+
+.contact-form h2 {
+    padding: 1% 7%;
+    text-transform: uppercase;
+}
+
+.contact-form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    resize: none;
+}
+
+.contact-form button {
+    border: none;
+    border-radius: 12px;
+    background-color: #857537;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+.more-contact {
+    text-align: center;
+}
+
+.media-button .btn {
+    border: 3px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    color: #857537;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: #808080;
+}
+
+.more-contact h2 {
+    text-transform: uppercase;
+}
+
+/* contacts style ends here */
+
+
+/* Footer style starts here */
+.footer {
+    background-color: #202020;
+    overflow: auto;
+    padding: 1% 10%;
+
+}
+
+.footer-desc {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+
+}
+
+/* Footer style ends here */
